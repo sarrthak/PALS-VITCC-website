@@ -1,4 +1,4 @@
-# PALS-VITCC-webiste
+# PALS-VITCC-website
 These are the files related to PALS-VITCC
 
 Demo Images: https://pixabay.com/es/
