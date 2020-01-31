@@ -5,3 +5,18 @@ html{
 .section-page{
     height: 100vh;
 }
+
+#forMobile{
+    display: none;
+  }
+  #forPc{
+    display: block;
+  }
+  @media screen and (max-width: 760px){
+    #forMobile{
+      display: block;
+    }
+    #forPc{
+      display: none;
+    }
+  }
