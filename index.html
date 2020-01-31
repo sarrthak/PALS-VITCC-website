@@ -40,9 +40,9 @@
   </nav>
   <div class="section-page" id="home" style="background-color: #ffffff;">
 
+
   </div>
-  <div class="section-page d-flex justify-content-between align-items-center p-4" id="about"
-    style="background-color: #F086B6;">
+  <div class="section-page" id="about" style="background-color: #F086B6;">
     <div class="w-50">
       <p class="display-2 mb-5">About Us</p>
       <div class="text-justify">
@@ -66,8 +66,76 @@
 
   </div>
   <div class="section-page" id="contact">
+    <div class="text-center display-4">Contact Us</div><br>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <form class="form card p-2 m-4" action="POST">
+            <label for="Name">Name</label>
+            <input type="Name" placeholder="Name" required class="form-control"> <br>
+
+            <label for="Email"></label>Email
+            <input type="Email" placeholder="Email" required class="form-control" id="formGroupExampleInput"> <br>
+
+            <label for="Feedback">Feedback</label>
+            <textarea name="Feedback" id="" cols="20" rows="10" placeholder="Feedback" class="form-control"></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary">Success</button>
+          </form>
+        </div>
+        <div class="col-12 col-md-5">
+          <div class="card mt-4 mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <img src="img/cat.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 540px;" id="forPc">
+            <div class="row no-gutters">
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <img src="img/cat.jpg" class="card-img" alt="...">
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 540px;" id="forMobile">
+            <div class="row no-gutters">
+              <div class="col-md-5">
+                <img src="img/cat.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
