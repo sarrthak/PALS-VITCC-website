@@ -42,21 +42,29 @@
 
 
   </div>
-  <div class="section-page" id="about" style="background-color: #F086B6;">
-    <div class="w-50">
-      <p class="display-2 mb-5">About Us</p>
-      <div class="text-justify">
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at
-        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
-        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
-        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
-        accident, sometimes on purpose (injected humour and the like).
+  <div class="section-page d-flex align-items-center" id="about" style="background-color: #f1bbd3;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="display-4 mb-5">About Us</p>
+          <div class="text-justify">
+            It is a long established fact that a reader will be distracted by the readable content of a page
+            when looking at
+            its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            letters, as
+            opposed to using 'Content here, content here', making it look like readable English. Many
+            desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+            'lorem ipsum'
+            will uncover many web sites still in their infancy. Various versions have evolved over the
+            years, sometimes by
+            accident, sometimes on purpose (injected humour and the like).
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="img/about-img.svg" style="width: 100%;">
+        </div>
       </div>
-    </div>
-    <div class="w-50 d-flex justify-content-center">
-      <img src="https://static.toiimg.com/thumb/msid-69680011,width-640,resizemode-4/69680011.jpg" width="450"
-        height="338" alt="Related image">
     </div>
   </div>
   <div class="section-page" id="gallery" style="background-color: #3088C8;">
@@ -65,23 +73,35 @@
   <div class="section-page" id="testimonial">
 
   </div>
-  <div class="section-page" id="contact">
-    <div class="text-center display-4">Contact Us</div><br>
+  <div class="section-page d-flex align-items-center" id="contact">
 
     <div class="container">
+      <div class="text-center display-4 mb-5">Contact Us</div>
       <div class="row">
         <div class="col-12 col-md-7">
-          <form class="form card p-2 m-4" action="POST">
-            <label for="Name">Name</label>
-            <input type="Name" placeholder="Name" required class="form-control"> <br>
+          <form class="card p-2 m-4" action="POST">
+            <img class="m-2" src="img/contact-img.png" style="width: 25%;align-self:center">
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" required>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" placeholder="Enter Email" id="email" class="form-control" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                else.</small>
+            </div>
+            <div class="form-group">
+              <textarea name="feedback" rows="5" placeholder="Feedback/Query" class="form-control"></textarea>
+            </div>
 
-            <label for="Email"></label>Email
-            <input type="Email" placeholder="Email" required class="form-control" id="formGroupExampleInput"> <br>
-
-            <label for="Feedback">Feedback</label>
-            <textarea name="Feedback" id="" cols="20" rows="10" placeholder="Feedback" class="form-control"></textarea>
-            <br>
-            <button type="submit" class="btn btn-primary">Success</button>
+            <button type="submit" class="btn btn-success">Submit</button>
           </form>
         </div>
         <div class="col-12 col-md-5">
@@ -93,7 +113,8 @@
               <div class="col-md-7">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to
                     additional content. This content is a little bit longer.</p>
                 </div>
               </div>
@@ -105,7 +126,8 @@
               <div class="col-md-7">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to
                     additional content. This content is a little bit longer.</p>
                 </div>
               </div>
@@ -123,7 +145,8 @@
               <div class="col-md-7">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to
                     additional content. This content is a little bit longer.</p>
                 </div>
               </div>
@@ -133,9 +156,6 @@
       </div>
     </div>
   </div>
-
-
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

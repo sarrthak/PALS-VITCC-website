@@ -2,20 +2,23 @@ html {
   scroll-behavior: smooth;
 }
 
-#forMobile{
+#forMobile {
+  display: none;
+}
+
+#forPc {
+  display: block;
+}
+
+@media screen and (max-width: 760px) {
+  #forMobile {
+    display: block;
+  }
+
+  #forPc {
     display: none;
   }
-#forPc{
-   display: block;
 }
-  @media screen and (max-width: 760px){
-    #forMobile{
-      display: block;
-    }
-    #forPc{
-      display: none;
-    }
-  }
 
 .section-page {
   height: 100vh;
@@ -27,4 +30,3 @@ html {
     flex-direction: column;
   }
 }
-
