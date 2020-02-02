@@ -8,10 +8,38 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- styling -->
+    <style>
+        .image-responsive{
+            width: 100%;
+        }
+
+        #about{
+            height: 100vh;
+        }
+
+        @media only screen and (max-width: 756px){
+            .image-responsive{
+                width:100%;
+                overflow: hidden;
+            }
+            
+            #about{
+                height: 120vh;
+            }
+        }
+    </style>
+
+    <!--scripts-->
+    <script>
+    </script>
+
   <title>PALS</title>
 </head>
 
 <body>
+<!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div data-toggle="collapse" data-target=".navbar-collapse.show">
       <a class="navbar-brand" href="#">
@@ -38,13 +66,15 @@
         </li>
       </div>
   </nav>
+
+  <!--Home-->
   <div class="section-page" id="home" style="background-color: #ffffff;">
-
-
   </div>
+  
+  <!-- AboutUs -->
   <div class="section-page d-flex align-items-center" id="about" style="background-color: #f1bbd3;">
     <div class="container">
-      <div class="row">
+        <div class="row">
         <div class="col-md-6">
           <p class="display-4 mb-5">About Us</p>
           <div class="text-justify">
@@ -62,19 +92,23 @@
           </div>
         </div>
         <div class="col-md-6">
-          <img src="img/about-img.svg" style="width: 100%;">
+          <img src="img/about-img.svg" class="image-responsive">
         </div>
       </div>
     </div>
   </div>
+
+  <!--Gallery-->
   <div class="section-page" id="gallery" style="background-color: #3088C8;">
 
+
+  <!--Testimonials-->  
   </div>
   <div class="section-page" id="testimonial">
 
+  <!--ContactUs-->  
   </div>
   <div class="section-page d-flex align-items-center" id="contact">
-
     <div class="container">
       <div class="text-center display-4 mb-5">Contact Us</div>
       <div class="row">
@@ -157,6 +191,8 @@
     </div>
   </div>
 
+
+  <!--Scripts-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -167,5 +203,4 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
