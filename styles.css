@@ -1,0 +1,32 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#forMobile {
+  display: none;
+}
+
+#forPc {
+  display: block;
+}
+
+@media screen and (max-width: 760px) {
+  #forMobile {
+    display: block;
+  }
+
+  #forPc {
+    display: none;
+  }
+}
+
+.section-page {
+  height: 100vh;
+  width: 100%;
+}
+
+@media only screen and (max-width: 760px) {
+  #about {
+    flex-direction: column;
+  }
+}
