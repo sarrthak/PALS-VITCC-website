@@ -1,3 +1,9 @@
+<!-- color palette
+  #57b3df
+  #140813
+  #f8f5f5
+  #d0312d -->
+
 <!doctype html>
 <html lang="en">
 
@@ -19,17 +25,39 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="./favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#0C1446">
+    <meta name="theme-color" content="#000000">
+    <meta http-equiv="Cache-control" content="no-cache" pragma="no-cache">
 
   <!-- styling -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+      crossorigin="anonymous">
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css" 
+      integrity="sha384-pb48TpU6xuBnw0Hg/AajWKCHyZggk38ZS2dxscTTCYzSRY99E7l55q0Q0Ht79UEx" 
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" 
+      integrity="sha384-28LxBI7W+Dapb3A8MTRqxV66gb9JlWbIxDXjyt625fYrMXiooed501as+WMytlba" 
+      crossorigin="anonymous">
 
     <style>
+      /* miscellaneous */
         .image-responsive{
             width: 100%;
         }
@@ -40,21 +68,397 @@
                 overflow: hidden;
             }
         }
+
+        .font_old_standard{
+          font-family: 'Old Standard TT', serif;
+        }
+
+        .font_questrial{
+          font-family: 'Questrial', sans-serif;;
+        }
+
+        .font_anton{
+          font-family: 'Anton', sans-serif;
+        }
+
+        .bg_red{
+          background: #d0312d;
+          color: #f8f5f5;
+        }
+
+        .bg_black{
+          background-color: #140813;
+        }
+
+        .bg_black_1{
+          background-color: #000000;
+        }
+
+
+      /* navbar */
+        .nav-item{
+          border: 1.5px solid #f8f5f5;
+          border-radius: 5%;
+          margin: 10px;
+          padding: 5px;
+        }
+
+        .nav-item:hover{
+          background-color: #140813;
+
+        }
+
+        .navbar-fixed-top.scrolled {
+            background-color: #000 !important;
+            transition: background-color 10ms linear;
+        }
+
+        /* sliderdown */
+        *, *:before, *:after {
+        -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+        }
+
+
+        .mouse_scroll {
+        display: block;
+        margin: 0 auto;
+        width: 24px;
+        height: 100px;
+        margin-top: 10px;
+        }
+
+
+        .m_scroll_arrows
+        {
+        display: block;
+        width: 5px;
+        height: 5px;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);    
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        margin: 0 0 3px 4px;
+        width: 16px;
+        height: 16px;
+        }
+
+
+        .one
+        {
+        margin-top: 1px;
+        }
+
+        .one, .two, .three
+        {
+          -webkit-animation: mouse-scroll 1s infinite;
+          -moz-animation: mouse-scroll 1s infinite;
+          animation: mouse-scroll 1s infinite;
+        }
+        .one
+        {
+        -webkit-animation-delay: .1s;
+        -moz-animation-delay: .1s;
+        -webkit-animation-direction: alternate;
+
+        animation-direction: alternate;
+        animation-delay: alternate;
+        }
+
+        .two
+        {
+        -webkit-animation-delay: .2s;
+        -moz-animation-delay: .2s;
+        -webkit-animation-direction: alternate;
+        animation-delay: .2s;
+        animation-direction: alternate;
+        margin-top: -6px;
+        }
+
+        .three
+        {
+        -webkit-animation-delay: .3s;
+        -moz-animation-delay: .3s;
+        -webkit-animation-direction: alternate;
+        animation-delay: .3s;
+        animation-direction: alternate;
+        margin-top: -6px;
+        }
+
+        @-webkit-keyframes mouse-scroll {
+        0%   { opacity: 0;}
+        50%  { opacity: .5;}
+        100% { opacity: 1;}
+        }
+        @-moz-keyframes mouse-scroll {
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+        }
+        @-o-keyframes mouse-scroll {
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+        }
+        @keyframes mouse-scroll {
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+        }
+
+
+        /* background-video */
+        header {
+          position: relative;
+          background-color: black;
+          height: 90vh;
+          min-height: 25rem;
+          width: 100%;
+          overflow: hidden;
+        }
+
+        header video {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          z-index: 0;
+          -ms-transform: translateX(-50%) translateY(-50%);
+          -moz-transform: translateX(-50%) translateY(-50%);
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+        }
+
+        header .container_video {
+          position: relative;
+          z-index: 2;
+        }
+
+        header .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 50%;
+          width: 100%;
+          background-color: black;
+          opacity: 0.5;
+          z-index: 1;
+          transform: translateY(45%);
+        }
+
+        @media (pointer: coarse) and (hover: none) {
+          header {
+            background: url('./img/background-video/bg_1_mobile.mp4') black no-repeat center center scroll;
+          }
+          header video {
+            display: none;
+          }
+        }
+        
+      /* gallery */
+        /* #gallery{
+          background-image: url('./img/rectangular-frame-original.png');
+        } */
+
+      /* testimonials */
+        #testimonial{
+          height: auto;
+          color: antiquewhite;
+          margin: 10% 0;
+        }
+
+        .shadow-effect {
+            background: #000;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            border:1px solid #ECECEC;
+            box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
+        }
+          #customers-testimonials .shadow-effect p {
+              font-family: inherit;
+              font-size: 17px;
+              line-height: 1.5;
+              margin: 0 0 17px 0;
+              font-weight: 300;
+          }
+          .testimonial-name {
+              margin: -17px auto 0;
+              display: table;
+              width: auto;
+              background: #d0312d;
+              padding: 9px 35px;
+              border-radius: 12px;
+              text-align: center;
+              color: #000000;
+              box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+          }
+          #customers-testimonials .item {
+              text-align: center;
+              padding: 50px;
+              margin-bottom:80px;
+              opacity: 0.2;
+              -webkit-transform: scale3d(0.8, 0.8, 1);
+              transform: scale3d(0.8, 0.8, 1);
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+          }
+          #customers-testimonials .owl-item.active.center .item {
+              opacity: 1;
+              -webkit-transform: scale3d(1.0, 1.0, 1);
+              transform: scale3d(1.0, 1.0, 1);
+          }
+          .owl-carousel .owl-item img {
+              transform-style: preserve-3d;
+              max-width: 90px;
+              margin: 0 auto 17px;
+          }
+          #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+          #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+              background: #d0312d;
+              transform: translate3d(0px, -50%, 0px) scale(0.7);
+          }
+          #customers-testimonials.owl-carousel .owl-dots{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+          }
+          #customers-testimonials.owl-carousel .owl-dots .owl-dot{
+            display: inline-block;
+          }
+          #customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+              background: #d0312d;
+              display: inline-block;
+              height: 20px;
+              margin: 0 2px 5px;
+              transform: translate3d(0px, -50%, 0px) scale(0.3);
+              transform-origin: 50% 50% 0;
+              transition: all 850ms ease-out 0s;
+              width: 20px;
+          }
+
+          /* preloader */
+          #preloader{
+            width: 20%;
+          }
+          
+          @media only screen and (max-width: 768px) {
+              #preloader{
+                  width: 50%;
+              }
+          }
+
+          #loader{
+            height: 100%;
+            width: 100%;
+            background-color: #000000;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1020;
+        }
+
+          #loader img{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+          }
+
+          /* favicons */
+          .fa{
+            font-size: 25px;
+            padding: 10px;
+            border: 1.5px solid  #f8f5f5;
+            border-radius: 100%;
+            color: #f8f5f5;
+            margin: 1%;
+          }
+
+          .fa:hover{
+            color: #140813;
+            background-color: #f8f5f5;
+            transition-delay: 25ms ;
+          }
     </style>
 
     <!--scripts-->
-    <script>
-    </script>
+        <!-- bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+          crossorigin="anonymous"></script>
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" 
+          integrity="sha384-mXQoED/lFIuocc//nss8aJOIrz7X7XruhR6bO+sGceiSyMELoVdZkN7F0oYwcFH+" 
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js" 
+          integrity="sha384-8KrTavSFMDGkUfPkKIgtLyEBzRoia7XkwF91P8uS+/ft3s20fSB8O8aGSSD4Myf5" 
+          crossorigin="anonymous"></script>
 
+    <script>
+      jQuery(document).ready(function($) {
+        		"use strict";
+        		//  TESTIMONIALS CAROUSEL HOOK
+		        $('#customers-testimonials').owlCarousel({
+		            loop: true,
+		            center: true,
+		            items: 3,
+		            margin: 0,
+		            autoplay: true,
+		            dots:true,
+		            autoplayTimeout: 4500,
+		            smartSpeed: 250,
+		            responsive: {
+		              0: {
+		                items: 1
+		              },
+		              768: {
+		                items: 2
+		              },
+		              1170: {
+		                items: 3
+		              }
+		            }
+		        });
+          });
+    </script>
   <title>PALS</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="bg_black">
+
+<!-- preloader -->
+<div id="loader">
+  <img id="preloader" src="https://media.giphy.com/media/WsFVlG9Fem3eVzR0a9/giphy.gif"/>
+</div>
+<script type="text/javaScript">
+  var metaThemeColor = document.querySelector("meta[name=theme-color]");
+  var loader = document.getElementById("loader");
+      window.addEventListener("load", function() {
+      loader.style.height = "100px";
+      loader.style.width = "100px";
+      loader.style.borderRadius = "50%";
+      metaThemeColor.setAttribute("content", "#140813");
+      loader.style.visibility = "hidden";
+});
+</script>
+
 <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top fixed-top">
     <div data-toggle="collapse" data-target=".navbar-collapse.show">
       <a class="navbar-brand" href="#">
-        <img src="img/logo.webp" alt="PALS" style="height: 50px;">
+        <img src="img/LOGO-SLEEVE.webp" alt="PALS" style="height: 75px;">
       </a>
     </div>
     <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar_items"
@@ -64,31 +468,62 @@
     <div class="collapse navbar-collapse" id="navbar_items">
       <div class="navbar-nav ml-auto">
         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link font_anton" href="#about">About</a>
         </li>
         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" href="#gallery">Gallery</a>
+          <a class="nav-link font_anton" href="#gallery">Gallery</a>
         </li>
         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" href="#testimonial">Testimonials</a>
+          <a class="nav-link font_anton" href="#testimonial">Testimonials</a>
         </li>
         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link font_anton" href="#contact">Contact</a>
         </li>
       </div>
-  </nav>
+    </div>
+</nav>
+<script>
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+</script>
 
-  <!--Home-->
-  <div class="section-page" id="home" style="background-color: #ffffff;">
+  <!-- Home -->
+  <div class="section-page" id="home">
+    <header>
+      <div class="overlay"></div>
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="./img/background-video/bg_1.webm" type="video/mp4">
+      </video>
+      <div class="container_video h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-3 font_anton">Live To Create!</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <a href="#about">
+        <div class="mouse_scroll">
+          <span class="m_scroll_arrows one"></span>
+          <span class="m_scroll_arrows two"></span>
+          <span class="m_scroll_arrows three"></span>
+        </div>
+      </a>
+    </div>
   </div>
   
   <!-- AboutUs -->
-  <div class="section-page d-flex align-items-center" id="about" style="height: auto;background-color: #f1bbd3;">
+  <div class="section-page d-flex align-items-center" id="about" style="height: auto; margin-top: 50px;">
     <div class="container">
         <div class="row">
         <div class="col-md-6">
-          <p class="display-4 mb-5">About Us</p>
-          <div class="text-justify">
+          <p class="display-4 mb-5 font_old_standard" style="color: antiquewhite;"><b>About Us</b></p>
+          <div class="text-justify font_questrial" style="color: #f8f5f5">
             It is a long established fact that a reader will be distracted by the readable content of a page
             when looking at
             its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
@@ -110,45 +545,98 @@
   </div>
 
   <!--Gallery-->
-  <div class="section-page d-flex align-items-center" id="gallery" style="background-color: #3088C8;">
+  <div class="section-page display-4 mb-5 align-items-center" id="gallery" style="background-image: url('./img/rectangular-frame.svg'); background-repeat: no-repeat;">
+    <div class="text-center font_old_standard" style="color:antiquewhite;"><b>Gallery</b></div>
   </div>
 
    <!--Testimonials-->  
-  <div class="section-page" id="testimonial" style="background-color: #f6dba6; height: auto;">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta sapien in ipsum fringilla aliquet. Aenean fermentum dui ante, sit amet ullamcorper nisl fermentum ut. Integer eleifend velit vel tempus sagittis. Quisque vulputate turpis sed odio molestie, quis venenatis nisl imperdiet. Mauris tristique leo vel placerat condimentum. Aenean a convallis mi, non accumsan eros. In hac habitasse platea dictumst. Sed vulputate tortor sit amet dictum gravida.
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec urna diam, commodo nec diam ac, congue mollis enim. In euismod ac enim eget vehicula. Donec hendrerit, lectus in convallis aliquam, nunc sapien eleifend libero, eget suscipit mi ligula at est. Nam ornare lacus at massa venenatis molestie. Etiam leo lorem, blandit in dictum quis, maximus id ligula. Nunc aliquet ullamcorper elit, ac fringilla metus faucibus id.
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc efficitur risus eget felis ornare aliquet. Fusce porta consequat nibh, vitae vestibulum nibh maximus eu. Quisque pretium tellus eu metus feugiat, sed aliquet elit dictum. Etiam ut sem nibh. Proin ut enim sagittis, suscipit lacus eu, malesuada nibh. Aenean dolor ligula, interdum placerat turpis nec, mollis sagittis ligula. </p>
+  <div class="section-page font_questrial align-items-center" id="testimonial">
+    <div class="text-center display-4 mb-5 font_old_standard" style="color:antiquewhite;"><b>Testimonials</b></div>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="https://i.imgur.com/9f6538R.png" alt="profile">
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">Lorem Ipsum</div>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="https://i.imgur.com/9f6538R.png" alt="profile">
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">Lorem Ipsum</div>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="https://i.imgur.com/9f6538R.png" alt="profile">
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">Lorem Ipsum</div>
+            </div>
+            <!--END OF TESTIMONIAL 3 -->
+            <!--TESTIMONIAL 4 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="https://i.imgur.com/9f6538R.png" alt="profile">
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">Lorem Ipsum</div>
+            </div>
+            <!--END OF TESTIMONIAL 4 -->
+            <!--TESTIMONIAL 5 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="https://i.imgur.com/9f6538R.png" alt="profile">
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">Lorem Ipsum</div>
+            </div>
+            <!--END OF TESTIMONIAL 5 -->
+          </div>
+        </div>
+      </div>
+      </div>
   </div>
 
   <!--ContactUs-->  
-  <div class="section-page d-flex align-items-center" style="height: auto;"id="contact">
+  <div class="section-page align-items-center" style="height: auto; background-color: #000000; 
+    padding-bottom: 50px;box-sizing: 50px #140813;" id="contact">
     <div class="container">
-      <div class="text-center display-4 mb-5">Contact Us</div>
+      <div class="text-center display-4 mb-5 font_old_standard" style="color: antiquewhite; padding-top: 15px;"><b>Contact</b>Us</div>
       <div class="row">
         <div class="col-12 col-md-7">
-          <form class="card p-2 m-4" action="POST">
-            <img class="m-2" src="img/contact-img.png" style="width: 25%;align-self:center">
+          <form class="card p-2 m-4 bg_black_1" action="POST">
+            <img class="m-2" src="img/contact-img.png" style="width: 100%;align-self:center">
             <div class="form-group">
-              <div class="form-row">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="First name" required>
+              <div class="form-row bg_black">
+                <div class="col bg_black">
+                  <input type="text" class="form-control bg_black_1" placeholder="First name" required>
                 </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Last name">
+                <div class="col bg_black">
+                  <input type="text" class="form-control bg_black_1" placeholder="Last name">
                 </div>
               </div>
             </div>
             <div class="form-group">
-              <label for="email">Email address</label>
-              <input type="email" placeholder="Enter Email" id="email" class="form-control" required>
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                else.</small>
+              <input type="email" placeholder="Enter Email" id="email" class="form-control bg_black_1" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
-              <textarea name="feedback" rows="5" placeholder="Feedback/Query" class="form-control"></textarea>
+              <textarea name="feedback" rows="5" placeholder="Feedback/Query" class="form-control bg_black_1"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="submit" class="btn bg_red font_questrial">Submit</button>
           </form>
         </div>
         <div class="col-12 col-md-5">
@@ -158,10 +646,9 @@
                 <img src="img/cat.jpg" class="card-img" alt="...">
               </div>
               <div class="col-md-7">
-                <div class="card-body">
+                <div class="card-body bg_black_1" style="color: #f8f5f5">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural
-                    lead-in to
+                  <p class="card-text bg_black_1">This is a wider card with supporting text below as a natural lead-in to
                     additional content. This content is a little bit longer.</p>
                 </div>
               </div>
@@ -171,11 +658,10 @@
           <div class="card mb-3" style="max-width: 540px;" id="forPc">
             <div class="row no-gutters">
               <div class="col-md-7">
-                <div class="card-body">
+                <div class="card-body bg_black_1" style="color: #f8f5f5">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural
-                    lead-in to
-                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text bg_black_1">This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit longer.</p>
                 </div>
               </div>
               <div class="col-md-5">
@@ -190,14 +676,21 @@
                 <img src="img/cat.jpg" class="card-img" alt="...">
               </div>
               <div class="col-md-7">
-                <div class="card-body">
+                <div class="card-body bg_black_1" style="color: #f8f5f5;">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a wider card with supporting text below as a natural
-                    lead-in to
-                    additional content. This content is a little bit longer.</p>
+                    lead-in to additional content. This content is a little bit longer.</p>
                 </div>
+                
               </div>
             </div>
+          </div>
+          <div class="container text-center">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-youtube-square" aria-hidden="true"></i>
+            <i class="fa fa-snapchat-square" aria-hidden="true"></i>
+            <i class="fa fa-phone-square" aria-hidden="true"></i>
           </div>
         </div>
       </div>
@@ -205,15 +698,5 @@
   </div>
 
 
-  <!--Scripts-->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
 </body>
 </html>
